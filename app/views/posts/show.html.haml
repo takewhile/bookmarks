@@ -2,6 +2,13 @@
 
 %h1= @post.title
 
+%ul#links.links
+  - @post.links.each do |link|
+    %li.link
+      %span.title= link.title if link.title
+      %span.url= link.url
+      %span.description= link.description if link.description
+
 %h2 Add a link
 = simple_form_for([@post, @link || @post.links.new]) do |f|
   = f.input :url

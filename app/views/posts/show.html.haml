@@ -3,7 +3,7 @@
 %h1= @post.title
 
 %h2 Add a link
-= simple_form_for(@post.links.new) do |f|
+= simple_form_for([@post, @link || @post.links.new]) do |f|
   = f.input :url
   = f.input :title
   = f.input :description, :as => :text

@@ -1,6 +1,7 @@
 Bookmarks::Application.routes.draw do
-  resources :posts, :except => :index
-  resources :links, :only => [:create, :update, :destroy]
+  resources :posts, :except => :index do
+    resources :links, :only => [:create, :update, :destroy]
+  end
 
   root :to => 'pages#index'
   # The priority is based upon order of creation:

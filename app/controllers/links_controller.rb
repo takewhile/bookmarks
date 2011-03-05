@@ -2,14 +2,15 @@ class LinksController < ApplicationController
   # POST /links
   # POST /links.xml
   def create
-    @link = Link.new(params[:link])
+    @post = Post.find(params[:post_id])
+    @link = @post.links.new(params[:link])
 
     respond_to do |format|
       if @link.save
         format.html { redirect_to(@link.post, :notice => 'Link was successfully created.') }
         format.xml  { render :xml => @link, :status => :created, :location => @link }
       else
-        format.html { redirect_to(@link.post) }
+        format.html { render 'posts/show' }
         format.xml  { render :xml => @link.errors, :status => :unprocessable_entity }
       end
     end

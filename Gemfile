@@ -6,6 +6,7 @@ gem 'mongoid', '~>2.0.0rc7'
 gem 'bson_ext', '~>1.2.2'
 gem 'haml', '~>3.0.25'
 gem 'compass', '~>0.10.6'
+gem 'simple_form', '~>1.3.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

@@ -5,6 +5,8 @@ class Post
   field :title, :type => String
   identity :type => String
 
+  embeds_many :links
+
   attr_accessible :title
 
   before_save :generate_identity

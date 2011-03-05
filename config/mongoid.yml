@@ -1,0 +1,12 @@
+development:
+  host: localhost
+  database: bookmarks_development
+
+test:
+  host: localhost
+  database: bookmarks_test
+
+# set these environment variables on your prod server
+production:
+  host: localhost
+  database: bookmarks_production

@@ -9,6 +9,8 @@ class Post
 
   attr_accessible :title
 
+  validates_presence_of :title
+
   before_save :generate_identity
 
   private

@@ -5,7 +5,7 @@ Bookmarks::Application.routes.draw do
 
   get 'api/links/new', :to => 'api#create_link'
 
-  root :to => 'pages#index'
+  root :to => 'posts#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

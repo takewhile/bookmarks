@@ -5,6 +5,7 @@ class Link
   field :description, :type => String
 
   validates_presence_of :url
+  validates_uniqueness_of :url
 
   embedded_in :post
 end

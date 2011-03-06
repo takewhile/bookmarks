@@ -1,17 +1,20 @@
 %p#notice= notice
 
-%h1= @post.title
+%h1
+  = @post.title
+  = link_to "[Save to #{@post.title}]", "javascript:void(0);", :title => "Drag this to your Bookmarks, visit the page you want to bookmark, and click it", :class => :bookmarklet
 
-%ul#links.links
+%ol#links.links
   - @post.links.each do |link|
     %li.link
-      %span.title= link.title if link.title
-      %span.url= link.url
+      %span.title= link_to(link.title, link.url) if link.title
+      %span.url= link_to(link.url, link.url)
       %span.description= link.description if link.description
 
-%h2 Add a link
+
 = simple_form_for([@post, @link || @post.links.new]) do |f|
+  %h2 Add a link
   = f.input :url
   = f.input :title
-  = f.input :description, :as => :text
+  = f.input :description, :as => :text, :input_html => { :rows => 3 }
   = f.submit

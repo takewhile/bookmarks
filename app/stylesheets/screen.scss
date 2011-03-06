@@ -4,3 +4,119 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
+
+body {
+  color:#333;
+  font-family:"Lucida Grande";
+  font-size:13px;
+  width:960px;
+  margin:25px auto 0 auto;
+}
+
+h1, h2, h3, p {
+  margin:0.2em 0 0.8em 0
+}
+h1 {
+  font-size:2.5em;
+}
+h2 {
+  font-size:1.4em;
+  margin-bottom:0.8em;
+}
+
+a {
+  color:#4e81ac;
+  text-decoration:none;
+  &:hover {
+    //color:white;
+    //background:#4e81ac;
+    text-decoration:underline;
+  }
+}
+
+input {
+  font-family:"Lucida Grande";
+  color:#333;
+}
+
+// posts#new
+#new_post {
+  text-align:center;
+  margin-top:150px;
+  font-size:2em;
+  input.string, input.button {
+    font-size:16px;
+    padding:10px;
+    background:none;
+    border:none;
+    @include border-radius(5px);
+  }
+  input.string {
+    width:600px;
+    border:1px solid #ddd;
+    &:focus {
+      border-color:#bbb;
+    }
+  }
+  input.button {
+    color:#666;
+    border:1px solid #ddd;
+    @include linear-gradient(color-stops(#fcfcfc, #f6f6f6));
+    margin-top:20px;
+    &:hover {
+      border-color:#bbb;
+    }
+    &:active {
+      @include linear-gradient(color-stops(#f6f6f6, #fcfcfc));
+    }
+  }
+}
+
+// posts#show
+.bookmarklet {
+  font-size:11px;
+  padding:2px;
+  @include border-radius(2px);
+  // when dragging
+  &:active {
+    background:#4e81ac;
+    color:white;
+    text-decoration:none;
+  }
+}
+#links {
+  list-style-type:decimal;
+  .link {
+    margin-bottom:10px;
+    span {
+      display:block;
+      margin-bottom:8px;
+      &.title a{
+        @include border-radius(2px);
+        font-size:1.2em;
+      }
+    }
+  }
+}
+
+// add a link form
+#new_link {
+  margin-top:30px;
+  label {
+    width:100px;
+    display:block;
+    float:left;
+    clear:both;
+  }
+
+  input.string, textarea {
+    width:500px;
+    @include border-radius(3px);
+  }
+
+  div.input {
+    margin-bottom:6px;
+  }
+}
+

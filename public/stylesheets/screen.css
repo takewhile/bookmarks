@@ -61,3 +61,160 @@ q:before, q:after, blockquote:before, blockquote:after {
 a img {
   border: none;
 }
+
+/* line 9, ../../app/stylesheets/screen.scss */
+body {
+  color: #333;
+  font-family: "Lucida Grande";
+  font-size: 13px;
+  width: 960px;
+  margin: 25px auto 0 auto;
+}
+
+/* line 17, ../../app/stylesheets/screen.scss */
+h1, h2, h3, p {
+  margin: 0.2em 0 0.8em 0;
+}
+
+/* line 20, ../../app/stylesheets/screen.scss */
+h1 {
+  font-size: 2.5em;
+}
+
+/* line 23, ../../app/stylesheets/screen.scss */
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 0.8em;
+}
+
+/* line 28, ../../app/stylesheets/screen.scss */
+a {
+  color: #4e81ac;
+  text-decoration: none;
+}
+/* line 31, ../../app/stylesheets/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 38, ../../app/stylesheets/screen.scss */
+input {
+  font-family: "Lucida Grande";
+  color: #333;
+}
+
+/* line 44, ../../app/stylesheets/screen.scss */
+#new_post {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 2em;
+}
+/* line 48, ../../app/stylesheets/screen.scss */
+#new_post input.string, #new_post input.button {
+  font-size: 16px;
+  padding: 10px;
+  background: none;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 55, ../../app/stylesheets/screen.scss */
+#new_post input.string {
+  width: 600px;
+  border: 1px solid #ddd;
+}
+/* line 58, ../../app/stylesheets/screen.scss */
+#new_post input.string:focus {
+  border-color: #bbb;
+}
+/* line 62, ../../app/stylesheets/screen.scss */
+#new_post input.button {
+  color: #666;
+  border: 1px solid #ddd;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fcfcfc), color-stop(100%, #f6f6f6));
+  background-image: -moz-linear-gradient(top, #fcfcfc 0%, #f6f6f6 100%);
+  background-image: linear-gradient(top, #fcfcfc 0%, #f6f6f6 100%);
+  margin-top: 20px;
+}
+/* line 67, ../../app/stylesheets/screen.scss */
+#new_post input.button:hover {
+  border-color: #bbb;
+}
+/* line 70, ../../app/stylesheets/screen.scss */
+#new_post input.button:active {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #fcfcfc));
+  background-image: -moz-linear-gradient(top, #f6f6f6 0%, #fcfcfc 100%);
+  background-image: linear-gradient(top, #f6f6f6 0%, #fcfcfc 100%);
+}
+
+/* line 77, ../../app/stylesheets/screen.scss */
+.bookmarklet {
+  font-size: 11px;
+  padding: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 82, ../../app/stylesheets/screen.scss */
+.bookmarklet:active {
+  background: #4e81ac;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 88, ../../app/stylesheets/screen.scss */
+#links {
+  list-style-type: decimal;
+}
+/* line 90, ../../app/stylesheets/screen.scss */
+#links .link {
+  margin-bottom: 10px;
+}
+/* line 92, ../../app/stylesheets/screen.scss */
+#links .link span {
+  display: block;
+  margin-bottom: 8px;
+}
+/* line 95, ../../app/stylesheets/screen.scss */
+#links .link span.title a {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 1.2em;
+}
+
+/* line 104, ../../app/stylesheets/screen.scss */
+#new_link {
+  margin-top: 30px;
+}
+/* line 106, ../../app/stylesheets/screen.scss */
+#new_link label {
+  width: 100px;
+  display: block;
+  float: left;
+  clear: both;
+}
+/* line 113, ../../app/stylesheets/screen.scss */
+#new_link input.string, #new_link textarea {
+  width: 500px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 118, ../../app/stylesheets/screen.scss */
+#new_link div.input {
+  margin-bottom: 6px;
+}

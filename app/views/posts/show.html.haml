@@ -2,7 +2,7 @@
 
 %h1
   = @post.title
-  = link_to "[Save to #{@post.title}]", "javascript:void(0);", :title => "Drag this to your Bookmarks, visit the page you want to bookmark, and click it", :class => :bookmarklet
+  = link_to "[Save to #{@post.title}]", bookmarklet(@post), :title => "Drag this to your Bookmarks, visit the page you want to bookmark, and click it", :class => :bookmarklet
 
 %ol#links.links
   - @post.links.each do |link|

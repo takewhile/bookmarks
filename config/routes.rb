@@ -1,6 +1,6 @@
 Bookmarks::Application.routes.draw do
-  resources :posts, :except => :index do
-    resources :links, :only => [:create, :update, :destroy]
+  resources :posts, :except => [:index, :destroy] do
+    resources :links, :only => [:create] #, :update, :destroy]
   end
 
   get 'api/links/new', :to => 'api#create_link'
